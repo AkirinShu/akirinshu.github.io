@@ -3,32 +3,42 @@
     padding:0;
 }
 
-h1{
-    position:absolute;
-    top: 60px;
-    left:260px;
+body{
+    background-color: rgb(255, 238, 218);
 }
 
-img{
-    display: block;
-    margin: 0 auto;
-    margin-top: 60px;
+.box0{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-
-.footer{
-    background-color: rgb(199, 183, 172);
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-}
-.footer .box{
-    font-size: 16px;
-    font-weight:bolder;
+.box0 .t1{
     text-align: center;
+    font-size: 32px;
+    font-weight:bold;
 }
-.footer .box .text{
-    margin-top: 6px;
-    margin-bottom: 6px;
-    color: rgb(0, 0, 0);
+
+.box0 .t2{
+    text-align: center;
+    font-size: 24px;
+    font-weight:bold;
+}
+
+.box1{
+    width: 75%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.box1 h2{
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.box1 .p2{
+    margin-left: 20px;
+}
+
+.box1 .p3{
+    margin-left: 40px;
 }

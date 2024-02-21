@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+}
+
+.header {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.header .logo{
+    margin: 10px;
+    margin-left: 40px;
+    min-width: 80px;
+    max-width: 80px;
+}
+.header .Tlogo{
+    margin: 10px;
+    min-width: 150px;
+    max-width: 150px;
+}
+.header .text{
+    margin-left: 20px;
+    font-size: 22px;
+    white-space:nowrap;
+}
+.header .qq{
+    white-space:nowrap;
+}
+.header .option{
+    margin-left: auto;
+}
+.header .option div{
+    display: inline;
+    margin: 15px;
+    white-space:nowrap;
+}
+.header .option button{
+    background-color: #ffffff;
+    font-size: 22px;
+    border: none;
+}
+
+.background{
+    position:relative;
+}
+
+.background img{
+    min-width: 1000px;
+    width: 100%;
+}
+
+.background .arrow{
+    font-size: 75px;
+    position:absolute;
+    top: 690px;
+    left: 900px;
+    color: #0f0f0f;
+    animation: zoomOut 1s;
+    -webkit-animation: zoomOut 1s; /* Safari 与 Chrome */
+    animation-timing-function:ease-out;
+    -webkit-animation-timing-function:ease-out; /* Safari and Chrome */
+}
+@keyframes zoomOut{
+    0%{
+        top: 690px;
+    }
+    25%{
+        top: 710px;
+    }
+    50%{
+        top: 690px;
+    }
+    75%{
+        top: 710px;
+    }
+    100%{
+        top: 690px;
+    }
+}
+
+.containe .title{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 50px;
+}
+.containe p{
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.footer{
+    background-color: #913e3a;
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+}
+.footer p{
+    line-height: 30px;
+    text-align: center;
+    color: #d1b796;
+    white-space:nowrap;
+}
+
