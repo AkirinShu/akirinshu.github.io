@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>自适应布局</title>
+<style>
+  /* 全局样式 */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* 横向布局 */
+  .horizontal-layout {
+    display: flex;
+  }
+  
+  /* 纵向布局 */
+  .vertical-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* 具体内容样式 */
+  .box {
+    background-color: #ccc;
+    margin: 10px;
+    padding: 20px;
+    flex: 1;
+    box-sizing: border-box;
+  }
+  
+  /* 媒体查询：当宽度大于高度时使用横向布局 */
+  @media (orientation: landscape) {
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
+  /* 媒体查询：当高度大于宽度时使用纵向布局 */
+  @media (orientation: portrait) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">内容 1</div>
+    <div class="box">内容 2</div>
+    <div class="box">内容 3</div>
+  </div>
+</body>
+</html>
