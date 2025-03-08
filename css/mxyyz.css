@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.title img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-top: 2%;
+    margin-bottom: 0.5%;
+}
+
+.title .text{
+    text-align: center;
+}
+
+.page{
+    width: 75%;
+    min-width: 800px;
+    height: 1000px;
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
+}
+
+.page .tho3-5{
+    margin-left: 2%;
+    width: 75%;
+    min-width: 800px;
+    height: 50%;
+    background-color: rgb(72, 255, 0);
+}
+
+
+.page .zxnr{
+    margin: 2%;
+    width: 75%;
+    min-width: 800px;
+    height: 50%;
+    background-color: rgb(255, 0, 140);
+}
