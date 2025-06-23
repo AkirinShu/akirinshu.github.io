@@ -1,181 +1,194 @@
 *{
-    margin: 0px;
+  margin: 0px;
 }
 
 body{
-    background-repeat: no-repeat;
-    background-color: #dceffb;
+  background-repeat: no-repeat;
+  background-color: #dceffb;
+}
+
+
+.head{
+margin-left: auto;
+display: flex;
+justify-content: center; /* 水平居中 */
+width: 100%;
+}
+
+.bj{
+position: relative;
+background-size: 100vw auto;
 }
 
 .title img{
-    -webkit-user-drag: none;
-    position: absolute;
-    z-index: 1;
-    right: 0px;
-    top: 420px;
+  -webkit-user-drag: none;
+  position: absolute;
+  z-index: 1;
+  left: 1190px;
+  top: 420px;
 }
 
 .dfsj img{
-    -webkit-user-drag: none;
-    position: absolute;
-    z-index: 1;
-    right: 100px;
-    top: 660px;
+  -webkit-user-drag: none;
+  position: absolute;
+  z-index: 1;
+  left: 1235px;
+  top: 660px;
 }
 .dfsj img:hover {
-    filter: brightness(1.2);
-  }
+  filter: brightness(1.2);
+}
 
 .hyg img{
-    -webkit-user-drag: none;
-    position: absolute;
-    z-index: 1;
-    right: 100px;
-    top: 740px;
+  -webkit-user-drag: none;
+  position: absolute;
+  z-index: 1;
+  left: 1235px;
+  top: 740px;
 }
 .hyg img:hover {
-    filter: brightness(1.2);
-  }
+  filter: brightness(1.2);
+}
 
 .lk img{
-    -webkit-user-drag: none;
-    position: absolute;
-    z-index: 1;
-    right: 100px;
-    top: 840px;
+  -webkit-user-drag: none;
+  position: absolute;
+  z-index: 1;
+  left: 1235px;
+  top: 840px;
 }
 .lk img:hover {
-    filter: brightness(1.2);
-  }
+  filter: brightness(1.2);
+}
 
 .logo img{
-    -webkit-user-drag: none;
-    position: absolute;
-    z-index: 1;
-    right: 25px;
-    top: 25px;
+  -webkit-user-drag: none;
+  position: absolute;
+  z-index: 1;
+  left: 1760px;
+  top: 25px;
 }
 
 .hd1 img{
-    -webkit-user-drag: none;
-    position: absolute;
-    z-index: 1;
-    left: 20px;
-    top: 0px;
-    transition: transform 0.3s ease; /* 平滑动画 */
-    animation: slideUpDown1 3s ease-out; /* 动画名称、时长、缓动 */
+  -webkit-user-drag: none;
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  top: 0px;
+  transition: transform 0.3s ease; /* 平滑动画 */
+  animation: slideUpDown1 3s ease-out; /* 动画名称、时长、缓动 */
 }
 .hd1 img:hover {
-    transform: scale(1.02); /* 放大倍数 */
-    z-index: 2;
-    filter: brightness(1.05);
+  transform: scale(1.02); /* 放大倍数 */
+  z-index: 2;
+  filter: brightness(1.05);
+}
+@keyframes slideUpDown1 {
+  10% {
+    transform: translateY(0); /* 初始位置 */
   }
-  @keyframes slideUpDown1 {
-    10% {
-      transform: translateY(0); /* 初始位置 */
-    }
-    40% {
-      transform: translateY(15px); /* 移动50px */
-    }
-    70% {
-      transform: translateY(15px); /* 移动50px */
-    }
-    100% {
-      transform: translateY(0); /* 回到原位 */
-    }
+  40% {
+    transform: translateY(15px); 
   }
+  70% {
+    transform: translateY(15px); 
+  }
+  100% {
+    transform: translateY(0); /* 回到原位 */
+  }
+}
 
 .hd2 img{
-    -webkit-user-drag: none;
-    position: absolute;
-    z-index: 1;
-    left: 344px;
-    top: 0px;
-    transition: transform 0.3s ease; /* 平滑动画 */
-    animation: slideUpDown2 3s ease-out; /* 动画名称、时长、缓动 */
+  -webkit-user-drag: none;
+  position: absolute;
+  z-index: 1;
+  left: 344px;
+  top: 0px;
+  transition: transform 0.3s ease; /* 平滑动画 */
+  animation: slideUpDown2 3s ease-out; /* 动画名称、时长、缓动 */
 }
 .hd2 img:hover {
-    transform: scale(1.02); /* 放大倍数 */
-    z-index: 2;
-    filter: brightness(1.05);
+  transform: scale(1.02); /* 放大倍数 */
+  z-index: 2;
+  filter: brightness(1.05);
+}
+@keyframes slideUpDown2 {
+  10% {
+    transform: translateY(0); /* 初始位置 */
   }
-  @keyframes slideUpDown2 {
-    10% {
-      transform: translateY(0); /* 初始位置 */
-    }
-    40% {
-      transform: translateY(-15px); /* 移动50px */
-    }
-    70% {
-      transform: translateY(-15px); /* 移动50px */
-    }
-    100% {
-      transform: translateY(0); /* 回到原位 */
-    }
+  40% {
+    transform: translateY(-15px); 
   }
+  70% {
+    transform: translateY(-15px); 
+  }
+  100% {
+    transform: translateY(0); /* 回到原位 */
+  }
+}
 
 .hd3 img{
-    -webkit-user-drag: none;
-    position: absolute;
-    z-index: 1;
-    left: 628px;
-    top: 0px;
-    transition: transform 0.3s ease; /* 平滑动画 */
-    animation: slideUpDown3 3s ease-out; /* 动画名称、时长、缓动 */
+  -webkit-user-drag: none;
+  position: absolute;
+  z-index: 1;
+  left: 628px;
+  top: 0px;
+  transition: transform 0.3s ease; /* 平滑动画 */
+  animation: slideUpDown3 3s ease-out; /* 动画名称、时长、缓动 */
 }
 .hd3 img:hover {
-    transform: scale(1.02); /* 放大倍数 */
-    z-index: 2;
-    filter: brightness(1.05);
+  transform: scale(1.02); /* 放大倍数 */
+  z-index: 2;
+  filter: brightness(1.05);
+}
+@keyframes slideUpDown3 {
+  10% {
+    transform: translateY(0); /* 初始位置 */
   }
-  @keyframes slideUpDown3 {
-    10% {
-      transform: translateY(0); /* 初始位置 */
-    }
-    40% {
-      transform: translateY(15px); /* 移动50px */
-    }
-    70% {
-      transform: translateY(15px); /* 移动50px */
-    }
-    100% {
-      transform: translateY(0); /* 回到原位 */
-    }
+  40% {
+    transform: translateY(15px); 
   }
+  70% {
+    transform: translateY(15px); 
+  }
+  100% {
+    transform: translateY(0); /* 回到原位 */
+  }
+}
 
 .hd4 img{
-    -webkit-user-drag: none;
-    position: absolute;
-    z-index: 1;
-    left: 910px;
-    top: 0px;
-    transition: transform 0.3s ease; /* 平滑动画 */
-    animation: slideUpDown4 3s ease-out; /* 动画名称、时长、缓动 */
+  -webkit-user-drag: none;
+  position: absolute;
+  z-index: 1;
+  left: 910px;
+  top: 0px;
+  transition: transform 0.3s ease; /* 平滑动画 */
+  animation: slideUpDown4 3s ease-out; /* 动画名称、时长、缓动 */
 }
 .hd4 img:hover {
-    transform: scale(1.02); /* 放大倍数 */
-    z-index: 2;
-    filter: brightness(1.05);
+  transform: scale(1.02); /* 放大倍数 */
+  z-index: 2;
+  filter: brightness(1.05);
+}
+@keyframes slideUpDown4 {
+  10% {
+    transform: translateY(0); /* 初始位置 */
   }
-  @keyframes slideUpDown4 {
-    10% {
-      transform: translateY(0); /* 初始位置 */
-    }
-    40% {
-      transform: translateY(-15px); /* 移动50px */
-    }
-    70% {
-      transform: translateY(-15px); /* 移动50px */
-    }
-    100% {
-      transform: translateY(0); /* 回到原位 */
-    }
+  40% {
+    transform: translateY(-15px); 
   }
+  70% {
+    transform: translateY(-15px); 
+  }
+  100% {
+    transform: translateY(0); /* 回到原位 */
+  }
+}
 
 .jsy img{
-    -webkit-user-drag: none;
-    position: absolute;
-    z-index: 1;
-    left: 25px;
-    bottom: 3px;
+  -webkit-user-drag: none;
+  position: absolute;
+  z-index: 1;
+  left: 25px;
+  top: 840px;
 }
