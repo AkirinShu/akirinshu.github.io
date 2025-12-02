@@ -1,75 +1,168 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>江西THO | 江西东方Project同好会</title>
-    <link rel="shortcut icon" href="assets/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>江西THO | 东方Project同好会</title>
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
-
 <body>
 
-<div class="head">
+  <!-- 移动端底部导航 -->
+  <nav class="mobile-nav">
+    <a href="index.html" class="active">首页</a>
+    <a href="#">历届</a>
+    <a href="#">作品</a>
+    <a href="#">社群</a>
+    <a href="#">关于</a>
+  </nav>
 
-  <div class="bj">
-    <img src="assets/index/bj.png" alt="">
-
-    <div class="title">
-      <img src="assets/index/dbt.png" alt="">
+  <!-- 左侧边栏 -->
+  <aside class="sidebar">
+    <div class="logo-area">
+      <img src="assets/logo/logo.png" alt="江西THO Logo" class="logo">
     </div>
-  
-    <a href="https://dlcomic.com/events?search=%E6%B1%9F%E8%A5%BFTHO" target="_blank">
-      <div class="dfsj">
-        <img src="assets/index/dfsc.png" alt="">
+
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-item active">首页</a>
+      <a href="#" class="nav-item">历届活动</a>
+      <a href="#" class="nav-item">同人作品</a>
+      <a href="#" class="nav-item">社群</a>
+      <a href="#" class="nav-item">关于</a>
+    </nav>
+
+    <div class="social-links">
+      <div class="social-icons">
+        <a href="https://space.bilibili.com/636402394" title="Bilibili">
+           <img src="assets/logo/blilbili.gif" alt="">
+        </a>
+        <a href="https://thwiki.cc/-/32i5" title="THBWiki">
+            <img src="assets/logo/thbwiki.png" alt="">
+         </a>
+        <a href="https://x.com/jiangxi_touhou" title="X / Twitter">
+           <img src="assets/logo/twitter.png" alt="">
+        </a>
+        <a href="#" title="QQ群">
+           <img src="assets/logo/QQ.png" alt="">
+        </a>
       </div>
-    </a>
+      <p class="contact-email">Email: jxtho@foxmail.com</p>
+    </div>
+  </aside>
+
+  <!-- 右侧内容包裹器 -->
+  <div class="main-wrapper">
     
-    <a href="https://show.bilibili.com/platform/detail.html?id=102667" target="_blank">
-      <div class="hyg">
-        <img src="assets/index/hyg.png" alt="">
+    <!-- 顶部 Header -->
+    <header class="top-header">
+      <div class="theme-links">
+        <span style="color:#999; margin-right:10px;">THEMES:</span>
+        <a href="#" class="active">默认主题</a>
+        <a href="#">THO1</a>
+        <a href="#" style="background: linear-gradient(135deg, rgb(242,172,169) 0%, rgb(226,228,194) 100%); color: rgb(27, 27, 27);">THO2</a>
+        <a href="#" style="background: linear-gradient(135deg, rgb(3, 141, 254) 0%, rgb(241, 116, 255) 100%); color: rgb(255, 255, 255);">THO3</a>
+        <a href="#">THO4</a>
       </div>
-    </a>
-    
-    <a href="https://space.bilibili.com/636402394" target="_blank">
-      <div class="lk">
-        <img src="assets/index/lk.png" alt="">
+      
+      <div class="user-actions">
+        <a href="index-zh-cn">简体中文</a>
+        <a href="index-en">English</a>
+        <a href="index-jp">日本語</a>
+        <a href="login.html">登录账号</a>
       </div>
-    </a>
-    
-      <div class="logo">
-        <img src="assets/index/logo.png" alt="">
-      </div>
-    
-      <a href="https://dlcomic.com/events/207" target="_blank">
-        <div class="hd1">
-          <img src="assets/index/1.png" alt="">
+    </header>
+
+    <!-- 主内容区 Grid 布局 -->
+    <main class="content-area">
+      
+      <!-- 1. 聚焦 -->
+      <section class="card focus">
+        <div class="focus-content">
+          <h1>江西THO4.5 - 东方瑶镜缘Ultra</h1>
+          <h4>2026年2月13日 | 明月山温汤大酒店-江西省宜春市温汤镇温泉路110号</h4>
         </div>
-      </a>
-    
-      <a href="https://dlcomic.com/events/190" target="_blank">
-        <div class="hd2">
-          <img src="assets/index/2.png" alt="">
+        <div>
+          <a href="">购票→</a>
+          <a href="">申摊→</a>
         </div>
-      </a>
-    
-      <a href="https://dlcomic.com/events/205" target="_blank">
-        <div class="hd3">
-          <img src="assets/index/3.png" alt="">
-        </div>
-      </a>
-    
-    <a href="https://dlcomic.com/events/216" target="_blank">
-      <div class="hd4">
-        <img src="assets/index/4.png" alt="">
-      </div>
-    </a>
-    
-      <div class="jsy">
-        <img src="assets/index/jsy.png" alt="">
-      </div>
-  
-  </div>
-  
-</div>
+      </section>
+
+      <!-- 2. 介绍 (左侧大) -->
+      <section class="card col-large" style="background: linear-gradient(135deg, #fff 0%, #f0f4ff 100%);">
+        <h1>关于江西THO-梦违赣鄱荟萃</h1>
+        <hr>
+        <p>“江西THO”意为江西TouhouOnly，即<b>限定东方ProjectIP的同人活动</b>，形式一般为即卖会。</p>
+        <p>“江西THO”是活动性质，而<b>“梦违赣鄱荟萃”则是系列活动的名称</b>。在很多时候，每个活动会有单独的名字，例如“江西THO2-梦违赣鄱荟萃-落霞梦绘市集”。在有单独名字的情况下，“梦违赣鄱荟萃”系列名一般省略。</p>
+        <a href="#" style="color: var(--primary-color); margin-top:10px; display:inline-block;">→ 详细了解</a>
+      </section>
+
+      <!-- 3. 时间线 (右侧小) -->
+      <section class="card col-small">
+        <h1>未来</h1>
+        <hr>
+        <p><b>2025-12-20</b> | 宜春 | 演奏会 | 次元音律</p>
+        <p><b>2026-02-13</b> | 宜春 | 即卖会 | 江西THO4.5-东方瑶镜缘Ultra</p>
+        <p><b>2026-02-13</b> | 宜春 | Live | 江西THO4.5-夜场，名称待定</p>
+      </section>
+
+      <!-- 4. 历史 (左侧大) -->
+      <section class="card col-large">
+        <h1>历史</h1>
+        <hr>
+        <p>2021-江西THO1回忆</p>
+        <p>2023-江西THO2回忆</p>
+        <p>2024-江西THO3回忆</p>
+        <p>2025-江西THO4回忆</p>
+        <p>南昌市东方社群历史</p>
+        <p>宜春市东方社群历史</p>
+        <p>使用过的作品与合作过的作者</p>
+        <p>江西THO/江西东方同好会产出作品</p>
+      </section>
+
+      <!-- 5. 期刊 (右侧小) -->
+      <section class="card col-small">
+        <h1>赣鄱幻想大结界</h1>
+        <hr>
+        <p>2025-01-00z 第0期</p>
+        <p>2026-01-001 第1期</p>
+        <p>2026-02-002 第2期</p>
+        <p>2026-03-003 第3期</p>
+        <p>2026-04-004 第4期</p>
+        <p>2027-01-005 第5期</p>
+      </section>
+
+      <!-- 6. 百科 (半宽) -->
+      <section class="card col-half">
+        <h1>从零开始的THO举办流程</h1>
+        <hr>
+        <p>1，社群建设与同好会运营</p>
+        <p>2，小型常态化线下活动的策划与举办</p>
+        <p>3，中大型THO展会策划和举办</p>
+        <p>4，演奏会举办流程</p>
+        <p>5，Live举办流程</p>
+        <p>6，本地线下二次元合作相关经验</p>
+      </section>
+
+      <!-- 7. 社群 (半宽) -->
+      <section class="card col-half">
+        <h1>社群</h1>
+        <hr>
+        <p>江西各地东方线下活动</p>
+        <p>江西各地东方相关QQ群</p>
+        <p>江西各地东方社群账号</p>
+        <p>江西的东方同人社团</p>
+        <p>同人企划</p>
+      </section>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+      <hr style="width: 50%; margin: 0 auto 20px; border-top:1px solid #ddd;">
+      <p>@ 2018-2025 江西THO空想豫章筹办组 | 梦之朝霭社团</p>
+      <p>Touhou Project is a generic term for the works produced by ZUN/Team Shanghai Alice.</p>
+    </footer>
 
 </body>
+</html>
