@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>同人作品 | 江西THO</title>
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/works.css">
+</head>
+<body>
+
+  <!-- 移动端底部导航 -->
+  <nav class="mobile-nav">
+    <a href="index.html">首页</a>
+    <a href="#">历届</a>
+    <a href="works.html" class="active">作品</a>
+    <a href="#">社群</a>
+    <a href="#">关于</a>
+  </nav>
+
+  <!-- 左侧边栏 -->
+  <aside class="sidebar">
+    <div class="logo-area">
+      <img src="assets/logo/logo.png" alt="江西THO Logo" class="logo">
+    </div>
+
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-item">首页</a>
+      <a href="#" class="nav-item">历届活动</a>
+      <a href="works.html" class="nav-item active">同人作品</a>
+      <a href="#" class="nav-item">社群</a>
+      <a href="#" class="nav-item">关于</a>
+    </nav>
+
+    <div class="social-links">
+      <div class="social-icons">
+        <a href="https://space.bilibili.com/636402394" title="Bilibili">
+           <img src="assets/logo/blilbili.gif" alt="">
+        </a>
+        <a href="https://thwiki.cc/-/32i5" title="THBWiki">
+            <img src="assets/logo/thbwiki.png" alt="">
+         </a>
+        <a href="https://x.com/jiangxi_touhou" title="X / Twitter">
+           <img src="assets/logo/twitter.png" alt="">
+        </a>
+        <a href="#" title="QQ群">
+           <img src="assets/logo/QQ.png" alt="">
+        </a>
+      </div>
+      <p class="contact-email">Email: jxtho@foxmail.com</p>
+    </div>
+  </aside>
+
+  <!-- 右侧内容包裹器 -->
+  <div class="main-wrapper">
+
+    <!-- 顶部 Header -->
+    <header class="top-header">
+      <div class="theme-links">
+        <span style="color:#999; margin-right:10px;">THEMES:</span>
+        <a href="#" class="active">默认主题</a>
+        <a href="#">THO1</a>
+        <a href="#" style="background: linear-gradient(135deg, rgb(242,172,169) 0%, rgb(226,228,194) 100%); color: rgb(27, 27, 27);">THO2</a>
+        <a href="#" style="background: linear-gradient(135deg, rgb(3, 141, 254) 0%, rgb(241, 116, 255) 100%); color: rgb(255, 255, 255);">THO3</a>
+        <a href="#">THO4</a>
+      </div>
+
+      <div class="user-actions">
+        <a href="index-zh-cn">简体中文</a>
+        <a href="index-en">English</a>
+        <a href="index-jp">日本語</a>
+        <a href="login.html">登录账号</a>
+      </div>
+    </header>
+
+    <!-- 主内容区 -->
+    <main class="content-area" style="display: block;">
+
+      <!-- 页面标题区 -->
+      <header class="works-header">
+        <h1 class="works-header__title">同人作品 <span>Doujin Works</span></h1>
+        <p class="works-header__subtitle">
+          这里展示的同人周边作品，包括镭射票、亚克力立牌、同人本等。<br>
+          部分作品仅为展示，不保证持续贩售，具体购买方式请以活动现场或官方通知为准。
+        </p>
+      </header>
+
+      <!-- 筛选工具条 -->
+      <section class="works-toolbar" aria-label="筛选与排序">
+        <span class="works-toolbar__label">类别：</span>
+        <div class="works-toolbar__filters">
+          <button class="works-toolbar__filter-btn active" data-category="全部">全部</button>
+          <button class="works-toolbar__filter-btn" data-category="镭射票">镭射票</button>
+          <button class="works-toolbar__filter-btn" data-category="亚克力">亚克力</button>
+          <button class="works-toolbar__filter-btn" data-category="同人本">同人本</button>
+          <button class="works-toolbar__filter-btn" data-category="其他周边">其他周边</button>
+        </div>
+
+        <div class="works-toolbar__divider"></div>
+
+        <span class="works-toolbar__label">排序：</span>
+        <div class="works-toolbar__sort">
+          <button class="works-toolbar__sort-btn active" data-sort="newest">最新发布</button>
+          <button class="works-toolbar__sort-btn" data-sort="price-asc">价格从低到高</button>
+          <button class="works-toolbar__sort-btn" data-sort="price-desc">价格从高到低</button>
+        </div>
+      </section>
+
+      <!-- 作品网格 -->
+      <section class="works-grid" id="works-grid" aria-label="作品列表">
+        <!-- 由 JS 动态渲染 -->
+      </section>
+
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+      <hr style="width: 50%; margin: 0 auto 20px; border-top:1px solid #ddd;">
+      <p>@ 2018-2025 江西THO空想豫章筹办组 | 梦之朝霭社团</p>
+      <p>Touhou Project is a generic term for the works produced by ZUN/Team Shanghai Alice.</p>
+    </footer>
+
+  </div>
+
+  <!-- 模态弹层 -->
+  <div class="work-modal" id="work-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="work-modal__content" id="modal-content">
+      <!-- 由 JS 动态渲染 -->
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/works.js"></script>
+
+</body>
+</html>
