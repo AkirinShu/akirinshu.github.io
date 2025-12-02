@@ -1,0 +1,622 @@
+/**
+ * 社群页面 - 专用样式
+ * 使用 BEM 命名规范
+ */
+
+/* ==================== 1. 页面布局 ==================== */
+.community-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.community-header__title {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--text-main);
+  margin-bottom: 12px;
+}
+
+.community-header__title span {
+  font-size: 20px;
+  font-weight: normal;
+  color: #888;
+  margin-left: 12px;
+}
+
+.community-header__subtitle {
+  font-size: 15px;
+  color: var(--text-light);
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.community-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 30px;
+  align-items: start;
+}
+
+.community-layout__map {
+  position: sticky;
+  top: 80px;
+}
+
+.community-layout__panel {
+  min-height: 500px;
+}
+
+/* ==================== 2. 江西省地图 ==================== */
+.jx-map {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.jx-map__title {
+  font-size: 16px;
+  color: var(--text-main);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.jx-map__svg {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+/* 城市区域样式 */
+.jx-map__city {
+  fill: #ffffff;
+  stroke: #333;
+  stroke-width: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.jx-map__city:hover {
+  fill: #fff5f5;
+  stroke: var(--primary-color);
+  stroke-width: 1.5;
+}
+
+.jx-map__city--active {
+  fill: #fff0f2;
+  stroke: var(--primary-color);
+  stroke-width: 2;
+}
+
+/* 城市标记点 */
+.jx-map__marker {
+  fill: var(--primary-color);
+  stroke: #fff;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.jx-map__marker:hover,
+.jx-map__marker--active {
+  fill: var(--primary-hover);
+  r: 8;
+}
+
+/* 城市名称标签 */
+.jx-map__label {
+  font-size: 10px;
+  fill: #666;
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+/* Tooltip */
+.jx-map__tooltip {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.5;
+  pointer-events: none;
+  transform: translate(-50%, -100%);
+  z-index: 1000;
+  white-space: nowrap;
+  display: none;
+}
+
+.jx-map__tooltip .tooltip-tag {
+  color: #ffb6c1;
+  font-size: 12px;
+}
+
+/* ==================== 3. 信息面板 ==================== */
+.community-panel {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.community-panel__header {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.community-panel__title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-main);
+  margin-bottom: 12px;
+}
+
+.community-panel__tags {
+  display: flex;
+  gap: 8px;
+}
+
+.community-panel__tag {
+  display: inline-block;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.community-panel__tag--uni {
+  background-color: #1890ff;
+}
+
+.community-panel__section {
+  margin-bottom: 24px;
+}
+
+.community-panel__section:last-child {
+  margin-bottom: 0;
+}
+
+.community-panel__section-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--text-main);
+  margin-bottom: 12px;
+  padding-left: 12px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.community-panel__desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.community-panel__btn {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.community-panel__btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* 活动照片 */
+.community-panel__photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.community-panel__photo {
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.community-panel__photo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #999;
+  background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+}
+
+/* ==================== 4. 社交链接 ==================== */
+.community-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.community-socials__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.community-socials__item--disabled {
+  opacity: 0.6;
+}
+
+.community-socials__icon {
+  flex-shrink: 0;
+  width: 50px;
+  padding: 6px 0;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #12b7f5;
+  color: #fff;
+}
+
+.community-socials__icon--xhs {
+  background-color: #ff2442;
+}
+
+.community-socials__icon--bili {
+  background-color: #fb7299;
+}
+
+.community-socials__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.community-socials__name {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--text-main);
+  margin-bottom: 2px;
+}
+
+.community-socials__value {
+  font-size: 13px;
+  color: #666;
+}
+
+.community-socials__placeholder {
+  flex: 1;
+  font-size: 13px;
+  color: #999;
+}
+
+.community-socials__copy,
+.community-socials__link {
+  flex-shrink: 0;
+  padding: 8px 14px;
+  font-size: 13px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: #fff;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.community-socials__copy:hover,
+.community-socials__link:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* ==================== 5. 高校社群列表 ==================== */
+.university-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.university-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.university-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.university-list__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.university-list__name {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.university-list__community {
+  font-size: 13px;
+  color: #666;
+}
+
+.university-list__copy {
+  flex-shrink: 0;
+  padding: 8px 12px;
+  font-size: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: #fff;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.university-list__copy:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* ==================== 6. 南昌高校小地图模态 ==================== */
+.nanchang-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.nanchang-modal.active {
+  display: flex;
+}
+
+.nanchang-modal__content {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.nanchang-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 1;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.nanchang-modal__close:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.nanchang-modal__map {
+  flex: 1;
+}
+
+.nanchang-modal__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-main);
+  margin-bottom: 16px;
+}
+
+.nanchang-mini-map {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.nanchang-mini-map__svg {
+  width: 100%;
+  height: auto;
+}
+
+.nanchang-mini-map__outline {
+  fill: #fff;
+  stroke: #333;
+  stroke-width: 2;
+}
+
+.nanchang-mini-map__marker {
+  fill: #1890ff;
+  stroke: #fff;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nanchang-mini-map__marker:hover,
+.nanchang-mini-map__marker--active {
+  fill: var(--primary-color);
+  r: 10;
+}
+
+.nanchang-mini-map__label {
+  font-size: 9px;
+  fill: #666;
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+.nanchang-modal__info {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+.nanchang-mini-map__hint {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.nanchang-mini-map__uni-info {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.nanchang-mini-map__uni-info h4 {
+  font-size: 16px;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.nanchang-mini-map__uni-info p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.nanchang-mini-map__copy {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  background-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nanchang-mini-map__copy:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* ==================== 7. 复制提示 ==================== */
+.copy-toast {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  padding: 12px 24px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 3000;
+  pointer-events: none;
+}
+
+.copy-toast--visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ==================== 8. 响应式设计 ==================== */
+@media screen and (max-width: 1100px) {
+  .community-layout {
+    grid-template-columns: 1fr 350px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .community-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .community-layout__map {
+    position: static;
+  }
+
+  .community-header__title {
+    font-size: 28px;
+  }
+
+  .community-header__title span {
+    display: block;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .nanchang-modal__content {
+    flex-direction: column;
+    max-height: 95vh;
+    overflow-y: auto;
+  }
+
+  .nanchang-modal__info {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .community-panel__photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .community-socials__item {
+    flex-wrap: wrap;
+  }
+
+  .community-socials__copy,
+  .community-socials__link {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .university-list__item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .university-list__copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
