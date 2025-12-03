@@ -1,0 +1,318 @@
+/* ==================== 1. 全局重置与变量 ==================== */
+:root {
+    --primary-color: #cc3344;
+    --primary-hover: #a82433;
+    --bg-color: #f5f7fa;
+    --card-bg: #ffffff;
+    --text-main: #111111;
+    --text-light: #000000;
+    --border-color: #e0e0e0;
+    --sidebar-width: 240px;
+    --header-height: 60px;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    /*  Flex 布局管理 侧边栏 和 主内容 */
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* ==================== 2. 左侧侧边栏 (Aside) ==================== */
+  .sidebar {
+    width: var(--sidebar-width);
+    background-color: var(--card-bg);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* 固定在左 */
+    height: 100%;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-area {
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .logo {
+    max-width: 160px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  .site-title {
+    font-size: 14px;
+    color: var(--text-light);
+    font-weight: bold;
+  }
+  
+  /* 导航菜单 */
+  .nav-menu {
+    flex: 1;
+    padding: 20px 0;
+    overflow-y: auto;
+  }
+  
+  .nav-item {
+    display: block;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: var(--text-main);
+    border-left: 4px solid transparent;
+    transition: all 0.2s;
+  }
+  
+  .nav-item:hover, .nav-item.active {
+    background-color: #fff0f2; /* 淡淡的红色背景 */
+    color: var(--primary-color);
+    border-left-color: var(--primary-color);
+  }
+  
+  /* 侧边栏底部社交图标 */
+  .social-links {
+    padding: 20px;
+    border-top: 1px solid var(--border-color);
+    background-color: #fafafa;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  
+  .social-icons img:hover {
+    opacity: 1;
+  }
+  
+  .contact-email {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-light);
+  }
+  
+  /* ==================== 3. 右侧主容器 (Wrapper) ==================== */
+  .main-wrapper {
+    flex: 1;
+    margin-left: var(--sidebar-width); /* 让出侧边栏的位置 */
+    display: flex;
+    flex-direction: column;
+    min-width: 0; /* 防止Flex子项溢出 */
+  }
+  
+  /* ==================== 4. 顶部导航栏 (Header) ==================== */
+  .top-header {
+    /*height: var(--header-height);*/
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px); /* 毛玻璃效果 */
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: sticky;
+    top: 0;
+    z-index: 90;
+  }
+  
+  .theme-links a {
+    font-size: 13px;
+    margin-right: 15px;
+    color: var(--text-light);
+  }
+  
+  .theme-links a:hover, .theme-links a.active {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  .user-actions a {
+    font-size: 14px;
+    margin-left: 15px;
+    color: var(--text-light);
+  }
+  
+  .btn-login:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  /* ==================== 5. 主要内容区 (Main) ==================== */
+  .content-area {
+    padding: 30px;
+    /* Grid 布局系统：定义12列网格 */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 20px; /* 卡片之间的间距 */
+  }
+  
+  /* 通用卡片样式 */
+  .card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 20px;
+  }
+  
+  .card h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--text-main);
+    border-left: 4px solid var(--primary-color);
+    padding-left: 10px;
+    line-height: 1.2;
+  }
+  
+  .card hr {
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin-bottom: 15px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 8px;
+  }
+  
+  /* 特殊卡片：Focus (焦点图) - 跨越 12 列 (整行) */
+  .card.focus {
+    grid-column: span 12;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .focus-content {
+    margin: 30px;
+  }
+  
+  .focus-content .title {
+    font-size: 34px;
+  }
+
+  .focus-content h1 {
+    border: none;
+    padding: 0;
+    font-size: 28px;
+  }
+
+  
+  /* 布局逻辑：模拟原本的 60% / 40% 分割 */
+  /* 左侧大列 (7/12 ≈ 58%) */
+  .col-large {
+    grid-column: span 7; 
+  }
+  
+  /* 右侧小列 (5/12 ≈ 42%) */
+  .col-small {
+    grid-column: span 5;
+  }
+  
+  /* 均分列 (6/12 = 50%) */
+  .col-half {
+    grid-column: span 6;
+  }
+  
+  /* ==================== 6. 页脚 (Footer) ==================== */
+  footer {
+    text-align: center;
+    padding: 40px 0;
+    color: var(--text-light);
+    font-size: 13px;
+    margin-top: auto;
+  }
+  
+  /* ==================== 7. 移动端适配 (Media Queries) ==================== */
+  /* 移动端底部导航栏 (默认隐藏) */
+  .mobile-nav {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* 1. 隐藏左侧边栏 */
+    .sidebar {
+    display: none;
+    }
+  
+    /* 2. 重置主容器边距 */
+    .main-wrapper {
+    margin-left: 0;
+    margin-bottom: 60px; /* 给底部导航栏留位置 */
+    }
+  
+    /* 3. 顶部导航调整 */
+    .top-header {
+    padding: 0 15px;
+    }
+    .theme-links {
+    display: none; /* 手机上隐藏主题切换 */
+    }
+  
+    /* 4. 网格变单列：所有卡片都跨越 12 列 */
+    .card.focus, .col-large, .col-small, .col-half {
+    grid-column: span 12;
+    }
+    
+    .card.focus {
+    height: 200px; /* 手机上图片高度减小 */
+    }
+  
+    /* 5. 显示底部导航栏 */
+    .mobile-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: white;
+    border-top: 1px solid var(--border-color);
+    z-index: 1000;
+    justify-content: space-around;
+    align-items: center;
+    }
+  
+    .mobile-nav a {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    color: var(--text-light);
+    }
+    
+    .mobile-nav a.active {
+    color: var(--primary-color);
+    }
+  }
