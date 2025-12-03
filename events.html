@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>同人作品 - 江西THO</title>
+  <title>历届活动 | 江西THO</title>
   <link rel="shortcut icon" href="assets/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/index.css">
-  <link rel="stylesheet" type="text/css" href="css/works.css">
+  <link rel="stylesheet" type="text/css" href="css/events.css">
 </head>
 <body>
 
   <!-- 移动端底部导航 -->
   <nav class="mobile-nav">
     <a href="index.html">首页</a>
-    <a href="events.html">历届</a>
-    <a href="works.html" class="active">作品</a>
+    <a href="events.html" class="active">历届</a>
+    <a href="works.html">作品</a>
     <a href="community.html">社群</a>
     <a href="#">关于</a>
   </nav>
@@ -27,10 +27,10 @@
 
     <nav class="nav-menu">
       <a href="index.html" class="nav-item">首页</a>
-      <a href="events.html" class="nav-item">历届活动</a>
-      <a href="works.html" class="nav-item active">同人作品</a>
-      <a href="#" class="nav-item">社群</a>
-      <a href="jxtho.html" class="nav-item">关于</a>
+      <a href="events.html" class="nav-item active">历届活动</a>
+      <a href="works.html" class="nav-item">同人作品</a>
+      <a href="community.html" class="nav-item">社群</a>
+      <a href="#" class="nav-item">关于</a>
     </nav>
 
     <div class="social-links">
@@ -78,37 +78,23 @@
     <main class="content-area" style="display: block;">
 
       <!-- 页面标题区 -->
-      <header class="works-header">
-        <h1 class="works-header__title">同人作品 <span>Doujin Works</span></h1>
-        <p class="works-header__subtitle">
-          这里展示的同人周边作品，包括镭射票、亚克力立牌、同人本等。<br>
-          部分作品仅为展示，不保证持续贩售，具体购买方式请以活动现场或官方通知为准。
+      <header class="events-header">
+        <h1 class="events-header__title">历届活动 <span>Event History</span></h1>
+        <p class="events-header__subtitle">
+          空想豫章筹办组自第一届起，已举办多场线下二次元音乐与同人活动。<br>
+          这里记录了每一届活动的大致信息与部分现场照片，见证江西东方社群的成长历程。
         </p>
       </header>
 
       <!-- 筛选工具条 -->
-      <section class="works-toolbar" aria-label="筛选与排序">
-        <span class="works-toolbar__label">类别：</span>
-        <div class="works-toolbar__filters">
-          <button class="works-toolbar__filter-btn active" data-category="全部">全部</button>
-          <button class="works-toolbar__filter-btn" data-category="镭射票">镭射票</button>
-          <button class="works-toolbar__filter-btn" data-category="亚克力">亚克力</button>
-          <button class="works-toolbar__filter-btn" data-category="同人本">同人本</button>
-          <button class="works-toolbar__filter-btn" data-category="其他周边">其他周边</button>
-        </div>
-
-        <div class="works-toolbar__divider"></div>
-
-        <span class="works-toolbar__label">排序：</span>
-        <div class="works-toolbar__sort">
-          <button class="works-toolbar__sort-btn active" data-sort="newest">最新发布</button>
-          <button class="works-toolbar__sort-btn" data-sort="price-asc">价格从低到高</button>
-          <button class="works-toolbar__sort-btn" data-sort="price-desc">价格从高到低</button>
-        </div>
+      <section class="events-toolbar" aria-label="活动筛选">
+        <button class="events-toolbar__filter-btn active" data-filter="全部">全部</button>
+        <button class="events-toolbar__filter-btn" data-filter="已举办">已举办</button>
+        <button class="events-toolbar__filter-btn" data-filter="即将举办">即将举办</button>
       </section>
 
-      <!-- 作品网格 -->
-      <section class="works-grid" id="works-grid" aria-label="作品列表">
+      <!-- 时间轴容器 -->
+      <section class="timeline" id="timeline" aria-label="活动时间轴">
         <!-- 由 JS 动态渲染 -->
       </section>
 
@@ -123,15 +109,31 @@
 
   </div>
 
-  <!-- 模态弹层 -->
-  <div class="work-modal" id="work-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <div class="work-modal__content" id="modal-content">
+  <!-- 照片画廊弹窗 -->
+  <div class="photo-modal" id="photo-modal" role="dialog" aria-modal="true" aria-label="照片画廊">
+    <button class="photo-modal__close" onclick="closePhotoModal()" aria-label="关闭">&times;</button>
+    <div class="photo-modal__header">
+      <h3 class="photo-modal__title" id="gallery-title">活动照片</h3>
+      <p class="photo-modal__counter" id="gallery-counter">1 / 3</p>
+    </div>
+    <div class="gallery">
+      <button class="gallery__nav" onclick="prevPhoto()" aria-label="上一张">&lt;</button>
+      <div class="gallery__image" id="gallery-image">
+        <div class="gallery__placeholder">活动现场照片</div>
+      </div>
+      <button class="gallery__nav" onclick="nextPhoto()" aria-label="下一张">&gt;</button>
+    </div>
+  </div>
+
+  <!-- 详情弹窗 -->
+  <div class="detail-modal" id="detail-modal" role="dialog" aria-modal="true" aria-label="活动详情">
+    <div class="detail-modal__content" id="detail-content">
       <!-- 由 JS 动态渲染 -->
     </div>
   </div>
 
   <!-- JavaScript -->
-  <script src="js/works.js"></script>
+  <script src="js/events.js"></script>
 
 </body>
 </html>
