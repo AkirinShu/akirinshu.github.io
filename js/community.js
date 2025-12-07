@@ -9,21 +9,21 @@ const cityCommunities = {
     name: "南昌市",
     nativeCommunity: {
       name: "南昌东方Project同好会",
-      description: "南昌东方Project同好会成立于2018年，是江西省最早的东方同好组织之一。社群定期举办线下聚会、观影活动、音乐分享会等，致力于为南昌地区的东方爱好者搭建交流平台。"
+      description: "-"
     },
     socials: {
       qqGroups: [
-        { name: "南昌东方同好会主群", number: "123456789" },
-        { name: "南昌东方同好会二群", number: "987654321" }
+        { name: "南昌东方同好会主群", number: "-" },
+        { name: "南昌东方同好会二群", number: "-" }
       ],
       xiaohongshu: {
         exists: true,
-        name: "南昌东方同好会",
+        name: "-",
         link: "#"
       },
       bilibili: {
         exists: true,
-        name: "南昌东方同好会官方",
+        name: "-",
         uid: "636402394",
         link: "https://space.bilibili.com/636402394"
       }
@@ -37,26 +37,26 @@ const cityCommunities = {
       },
       {
         name: "江西师范大学",
-        communityName: "江西师大东方Project同好会",
-        qq: "222222222",
+        communityName: "-",
+        qq: "-",
         location: { x: 180, y: 150 }
       },
       {
         name: "江西财经大学",
-        communityName: "江财东方Project同好会",
-        qq: "333333333",
+        communityName: "-",
+        qq: "-",
         location: { x: 220, y: 140 }
       },
       {
-        name: "华东交通大学",
-        communityName: "华东交大东方同好会",
+        name: "-",
+        communityName: "-",
         qq: "444444444",
         location: { x: 160, y: 130 }
       },
       {
-        name: "江西农业大学",
-        communityName: "江西农大东方同好会",
-        qq: "555555555",
+        name: "-",
+        communityName: "-",
+        qq: "-",
         location: { x: 190, y: 160 }
       }
     ],
@@ -71,11 +71,11 @@ const cityCommunities = {
     name: "九江市",
     nativeCommunity: {
       name: "九江东方Project同好会",
-      description: "九江东方Project同好会是九江地区东方爱好者的聚集地，社群氛围轻松友好，欢迎各位同好加入交流。"
+      description: "-"
     },
     socials: {
       qqGroups: [
-        { name: "九江东方同好交流群", number: "666666666" }
+        { name: "-", number: "-" }
       ],
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
@@ -89,12 +89,12 @@ const cityCommunities = {
   jingdezhen: {
     name: "景德镇市",
     nativeCommunity: {
-      name: "景德镇东方Project同好会",
-      description: "瓷都景德镇的东方爱好者社群，结合本地陶瓷文化特色，定期举办具有地方特色的同好活动。"
+      name: "-",
+      description: "-"
     },
     socials: {
       qqGroups: [
-        { name: "景德镇东方同好群", number: "777777777" }
+        { name: "-", number: "-" }
       ],
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
@@ -102,8 +102,8 @@ const cityCommunities = {
     universities: [
       {
         name: "景德镇陶瓷大学",
-        communityName: "陶大东方Project同好会",
-        qq: "888888888",
+        communityName: "-",
+        qq: "-",
         location: null
       }
     ],
@@ -116,11 +116,11 @@ const cityCommunities = {
     name: "萍乡市",
     nativeCommunity: {
       name: "萍乡东方Project同好会",
-      description: "江西萍乡地区的东方project爱好者聚集地，欢迎各地车万人加入"
+      description: "-"
     },
     socials: {
       qqGroups: [
-        { name: "萍乡东方project同好交流群", number: "1038983785" }
+        { name: "-", number: "-" }
       ],
       xiaohongshu: { exists: true,
         name: "赣西东方Project同好会",
@@ -140,11 +140,11 @@ const cityCommunities = {
     name: "新余市",
     nativeCommunity: {
       name: "新余东方Project同好会",
-      description: "新余地区东方同好聚集地，社群正在成长中，欢迎本地同好加入。"
+      description: "-"
     },
     socials: {
       qqGroups: [
-        { name: "新余东方同好群", number: "101010101" }
+        { name: "-", number: "-" }
       ],
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
@@ -159,11 +159,11 @@ const cityCommunities = {
     name: "鹰潭市",
     nativeCommunity: {
       name: "鹰潭东方Project同好会",
-      description: "道教名山龙虎山所在地，鹰潭东方同好会欢迎各位同好前来交流。"
+      description: "-"
     },
     socials: {
       qqGroups: [
-        { name: "鹰潭东方同好群", number: "121212121" }
+        { name: "-", number: "-" }
       ],
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
@@ -178,12 +178,12 @@ const cityCommunities = {
     name: "赣州市",
     nativeCommunity: {
       name: "赣州东方Project同好会",
-      description: "赣南地区最大的东方爱好者社群，覆盖赣州市区及周边县市，定期组织线下活动和聚会。"
+      description: "-"
     },
     socials: {
       qqGroups: [
-        { name: "赣州东方同好会主群", number: "131313131" },
-        { name: "赣州东方同好会二群", number: "141414141" }
+        { name: "赣州东方同好会群一", number: "-" },
+        { name: "赣州东方同好会群二", number: "-" }
       ],
       xiaohongshu: {
         exists: true,
@@ -195,8 +195,8 @@ const cityCommunities = {
     universities: [
       {
         name: "赣南师范大学",
-        communityName: "赣南师大东方同好会",
-        qq: "151515151",
+        communityName: "-",
+        qq: "-",
         location: null
       }
     ],
@@ -236,20 +236,20 @@ const cityCommunities = {
     name: "上饶市",
     nativeCommunity: {
       name: "上饶东方Project同好会",
-      description: "上饶地区东方爱好者社群，涵盖婺源、三清山等地的同好，欢迎加入交流。"
+      description: "-"
     },
     socials: {
       qqGroups: [
-        { name: "上饶东方同好群", number: "181818181" }
+        { name: "-", number: "-" }
       ],
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
     },
     universities: [
       {
-        name: "上饶师范学院",
-        communityName: "上饶师院东方同好会",
-        qq: "191919191",
+        name: "-",
+        communityName: "-",
+        qq: "-",
         location: null
       }
     ],
@@ -262,20 +262,20 @@ const cityCommunities = {
     name: "吉安市",
     nativeCommunity: {
       name: "吉安东方Project同好会",
-      description: "井冈山革命老区的东方爱好者社群，社群氛围温馨，欢迎同好加入。"
+      description: "-"
     },
     socials: {
       qqGroups: [
-        { name: "吉安东方同好群", number: "202020202" }
+        { name: "-", number: "-" }
       ],
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
     },
     universities: [
       {
-        name: "井冈山大学",
-        communityName: "井大东方同好会",
-        qq: "212121212",
+        name: "-",
+        communityName: "-",
+        qq: "-",
         location: null
       }
     ],
@@ -287,21 +287,21 @@ const cityCommunities = {
   fuzhou: {
     name: "抚州市",
     nativeCommunity: {
-      name: "抚州东方Project同好会",
-      description: "才子之乡抚州的东方爱好者聚集地，社群正在发展壮大中。"
+      name: "-",
+      description: "-"
     },
     socials: {
       qqGroups: [
-        { name: "抚州东方同好群", number: "222222223" }
+        { name: "-", number: "-" }
       ],
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
     },
     universities: [
       {
-        name: "东华理工大学",
-        communityName: "东华理工东方同好会",
-        qq: "232323232",
+        name: "-",
+        communityName: "-",
+        qq: "-",
         location: null
       }
     ],

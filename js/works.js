@@ -5,7 +5,7 @@
 
 // ==================== 示例数据 ====================
 const works = [
-  {
+  /* {
     id: 1,
     name: "镭射票 - 「春日幻梦」",
     category: "镭射票",
@@ -116,7 +116,7 @@ const works = [
     booth: "B-07",
     onlineLink: "#",
     images: ["assets/works/placeholder.jpg"]
-  }
+  }*/
 ];
 
 // ==================== 状态管理 ====================
