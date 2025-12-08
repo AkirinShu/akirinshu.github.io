@@ -11,6 +11,20 @@
   --header-height: 60px;
 }
 
+@font-face {
+  font-family: 'SourceHanSerifCN-Regular';
+  src: url('../assets/fonts/SourceHanSerifCN-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+  @font-face {
+  font-family: 'SourceHanSerifCN-Bold';
+  src: url('../assets/fonts/SourceHanSerifCN-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -185,12 +199,13 @@ ul {
 }
 
 .card h1 {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 15px;
   color: var(--text-main);
   border-left: 4px solid var(--primary-color);
   padding-left: 10px;
   line-height: 1.2;
+  font-family: 'SourceHanSerifCN-Bold', sans-serif;
 }
 
 .card hr {
