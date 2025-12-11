@@ -116,11 +116,11 @@ const cityCommunities = {
     name: "萍乡市",
     nativeCommunity: {
       name: "萍乡东方Project同好会",
-      description: "-"
+      description: "萍乡东方project同好群，欢迎萍乡与非萍乡车万同好"
     },
     socials: {
       qqGroups: [
-        { name: "-", number: "-" }
+        { name: "萍乡东方project同好交流群-赣州萍乡联合", number: "1038983785" }
       ],
       xiaohongshu: { exists: true,
         name: "赣西东方Project同好会",
