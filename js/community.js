@@ -17,12 +17,12 @@ const cityCommunities = {
       ],
       xiaohongshu: {
         exists: true,
-        name: "-",
+        name: "江西THO空想豫章筹办组",
         link: "#"
       },
       bilibili: {
         exists: true,
-        name: "-",
+        name: "江西THO空想豫章筹办组",
         uid: "636402394",
         link: "https://space.bilibili.com/636402394"
       }
@@ -91,6 +91,20 @@ const cityCommunities = {
         // OpenStreetMap坐标
         coords: [28.7427, 115.8657]
       },
+      {
+        name: "江西外语外贸职业技术学院",
+        communityName: "江西外语外贸职业技术学院东方project同好会",
+        qq: "554194233",
+        // OpenStreetMap坐标
+        coords: [28.7006, 116.0280]
+      },
+      {
+        name: "江西科技学院",
+        communityName: "江西科技学院东方project同好会",
+        qq: "1014853052",
+        // OpenStreetMap坐标
+        coords: [28.6806, 116.0130]
+      }
     ],
     photos: [
       "assets/community/placeholder.jpg",
@@ -112,7 +126,12 @@ const cityCommunities = {
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
     },
-    universities: null,
+    universities: [{
+      name: "共青城市大学城",
+      communityName: "共青城市大学城",
+      qq: "315859305",
+      location: null
+    }],
     photos: [
       "assets/community/placeholder.jpg"
     ],
@@ -215,11 +234,13 @@ const cityCommunities = {
         { name: "赣州车万人交流聚集地", number: "543308591" },
       ],
       xiaohongshu: {
-        exists: true,
-        name: "赣州东方同好会",
-        link: "#"
+        exists: false,
       },
-      bilibili: { exists: false }
+      bilibili: { exists: true,
+        name: "赣南东方同好会",
+        uid: "3546842333711089",
+        link: "https://https://space.bilibili.com/3546842333711089"
+       }
     },
     universities: [
       {
@@ -274,14 +295,7 @@ const cityCommunities = {
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
     },
-    universities: [
-      {
-        name: "-",
-        communityName: "-",
-        qq: "-",
-        location: null
-      }
-    ],
+    universities: null,
     photos: [
       "assets/community/placeholder.jpg"
     ],
@@ -332,14 +346,7 @@ const cityCommunities = {
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
     },
-    universities: [
-      {
-        name: "-",
-        communityName: "-",
-        qq: "-",
-        location: null
-      }
-    ],
+    universities: null,
     photos: [
       "assets/community/placeholder.jpg"
     ],
