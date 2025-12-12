@@ -1,0 +1,29 @@
+/* ----------------------------
+其他主题模式
+---------------------------- */
+.theme-tho1 {
+
+}
+.theme-tho2 {
+
+}
+.theme-tho3 { /* 同时作为暗色模式 */
+--primary-color: #f38aff; /* 主色（红色） */
+--primary-color2: #f57280; /* 链接色/副色 */
+--bg-color: #1a1a1a; /* 页面背景色 */
+--bg-color-sub: #4d4d4d; /* 页面次级背景色-主要用于渐变 */
+--card-bg: #2a2a2a; /* 卡片背景色 */
+--shadow-color: #11111113;/*阴影色 注意给透明度*/
+--text-title: #c2c2c2; /* 标题文字颜色 标题很粗，请注意不要给太高纯度的色*/
+--text-main: #d1d1d1; /* 主文字颜色 注意设置为最明显的色*/
+--text-sub: #c4c4c4; /* 次级文字颜色 最不明显的色*/
+--border-color: #f38aff; /* 边框 */
+--gradient: #f38aff;/*渐变色*/
+--sidebar-width: 13%; /* 左侧边栏宽度 */
+--img-bg: url("../assets/illustration/tho3.jpg");/*背景图片*/
+}
+.theme-tho4 {
+
+}
+
+/* 往下定义更多主题 */

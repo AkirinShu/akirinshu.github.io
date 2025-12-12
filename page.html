@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>江西THO</title>
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/pages.css">
+</head>
+<body>
+
+  <!-- 移动端底部导航 -->
+  <nav class="mobile-nav">
+    <a href="index.html">首页</a>
+    <a href="events.html">历届</a>
+    <a href="works.html">作品</a>
+    <a href="community.html">社群</a>
+    <a href="jxtho.html">关于</a>
+  </nav>
+
+  <!-- 左侧边栏 -->
+  <aside class="sidebar">
+    <div class="logo-area">
+      <img src="assets/logo/logo.png" alt="江西THO Logo" class="logo">
+    </div>
+
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-item">首页</a>
+      <a href="events.html" class="nav-item">历届活动</a>
+      <a href="works.html" class="nav-item">同人作品</a>
+      <a href="community.html" class="nav-item">社群</a>
+      <a href="jxtho.html" class="nav-item">关于</a>
+    </nav>
+
+    <div class="social-links">
+      <div class="social-icons">
+        <a href="https://space.bilibili.com/636402394" title="Bilibili">
+           <img src="assets/logo/blilbili.gif" alt="">
+        </a>
+        <a href="https://thwiki.cc/-/32i5" title="THBWiki">
+            <img src="assets/logo/thbwiki.png" alt="">
+         </a>
+        <a href="https://x.com/jiangxi_touhou" title="X / Twitter">
+           <img src="assets/logo/twitter.png" alt="">
+        </a>
+        <a href="#" title="QQ群">
+           <img src="assets/logo/QQ.png" alt="">
+        </a>
+      </div>
+      <p class="contact-email">Email: jxtho@foxmail.com</p>
+    </div>
+  </aside>
+
+  <!-- 右侧内容包裹器 -->
+  <div class="main-wrapper">
+    
+    <!-- 顶部 Header -->
+    <header class="top-header">
+      <div class="theme-links">
+        <span style="color:#999; margin-right:10px;">THEMES:</span>
+        <a href="#" class="active">默认主题</a>
+        <a href="#">THO1</a>
+        <a href="#" style="background: linear-gradient(135deg, rgb(242,172,169) 0%, rgb(226,228,194) 100%); color: rgb(27, 27, 27);">THO2</a>
+        <a href="#" style="background: linear-gradient(135deg, rgb(3, 141, 254) 0%, rgb(241, 116, 255) 100%); color: rgb(255, 255, 255);">THO3</a>
+        <a href="#">THO4</a>
+      </div>
+      
+      <div class="user-actions">
+        <a href="index-zh-cn">简体中文</a>
+        <a href="index-en">English</a>
+        <a href="index-jp">日本語</a>
+        <a href="login.html">登录账号</a>
+      </div>
+    </header>
+
+    <!-- 主内容区 Grid 布局 -->
+<main class="content-area">
+    <section class="card focus">
+        <div class="focus-content">
+            <!-- 在此处载入pages页面 -->
+        </div>
+    </section>
+    
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+      <hr style="width: 50%; margin: 0 auto 20px; border-top:1px solid #ddd;">
+      <p>@ 2018-2025 江西THO空想豫章筹办组 | 梦之朝霭社团</p>
+      <p>Touhou Project is a generic term for the works produced by ZUN/Team Shanghai Alice.</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const contentDiv = document.querySelector(".focus-content");
+      
+          // 从 URL 读取 ?page=xxx，例如 page.html?page=docs/1
+          const params = new URLSearchParams(location.search);
+          let pagePath = params.get("page");
+      
+          // 默认加载 pages/1.html
+          if (!pagePath) pagePath = "1";
+      
+          const fullPath = `pages/${pagePath}.html`;
+      
+          // 加载页面
+          fetch(fullPath)
+              .then(response => {
+                  if (!response.ok) {
+                      throw new Error("Page not found");
+                  }
+                  return response.text();
+              })
+              .then(html => {
+                  // 插入内容
+                  contentDiv.innerHTML = html;
+      
+                  // 获取子页面的第一个 <h1> 用于标题
+                  const tempDiv = document.createElement("div");
+                  tempDiv.innerHTML = html;
+                  const h1 = tempDiv.querySelector("h1");
+      
+                  if (h1 && h1.textContent) {
+                      document.title = `江西THO - ${h1.textContent}`;
+                  } else {
+                      document.title = "江西THO - 子页面";
+                  }
+              })
+              .catch(err => {
+                  console.error(err);
+                  contentDiv.innerHTML = `
+                      <h1>404 - 页面未找到</h1>
+                      <p>你访问的页面不存在。</p>
+                  `;
+                  document.title = "江西THO - 404";
+              });
+      });
+      </script>      
+      
+</body>
+</html>
