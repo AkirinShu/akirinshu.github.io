@@ -9,12 +9,11 @@ const cityCommunities = {
     name: "南昌市",
     nativeCommunity: {
       name: "南昌东方Project同好会",
-      description: "-"
+      description: "那么问题来了，南昌在哪儿？（没有在地图上找到南昌的位置，小爱同学也不知道南昌在哪儿）"
     },
     socials: {
       qqGroups: [
-        { name: "南昌东方同好会主群", number: "-" },
-        { name: "南昌东方同好会二群", number: "-" }
+        { name: "南昌东方project同好会", number: "610546073" }
       ],
       xiaohongshu: {
         exists: true,
@@ -33,32 +32,65 @@ const cityCommunities = {
         name: "南昌大学",
         communityName: "众神眷恋的幻想乡——南昌大学东方Project同好会",
         qq: "678088149",
-        location: { x: 200, y: 120 }
+        // 前湖校区 - OpenStreetMap坐标
+        coords: [28.6666, 115.8036]
       },
       {
         name: "江西师范大学",
-        communityName: "-",
-        qq: "-",
-        location: { x: 180, y: 150 }
+        communityName: "瑶湖畔的借书屋",
+        qq: "1149851021",
+        // 瑶湖校区 - OpenStreetMap坐标
+        coords: [28.6796, 116.0317]
       },
       {
         name: "江西财经大学",
-        communityName: "-",
-        qq: "-",
-        location: { x: 220, y: 140 }
+        communityName: "科学世纪的少年秘封俱乐部",
+        qq: "244251443",
+        // 蛟桥园校区 - OpenStreetMap坐标
+        coords: [28.7500, 115.8514]
       },
       {
-        name: "-",
-        communityName: "-",
-        qq: "444444444",
-        location: { x: 160, y: 130 }
+        name: "东华理工大学",
+        communityName: "东理浮梦东方群",
+        qq: "811230610",
+        // 南昌校区 - OpenStreetMap坐标
+        coords: [28.7222, 115.8233]
       },
       {
-        name: "-",
-        communityName: "-",
-        qq: "-",
-        location: { x: 190, y: 160 }
-      }
+        name: "江西农业大学",
+        communityName: "江农东方project同好会",
+        qq: "740623549",
+        // OpenStreetMap坐标
+        coords: [28.7630, 115.8340]
+      },
+      {
+        name: "江西中医药大学",
+        communityName: "永远亭豫章办事处",
+        qq: "799822249",
+        // 湾里校区 - OpenStreetMap坐标
+        coords: [28.6798, 115.7457]
+      },
+      {
+        name: "江西科技师范大学",
+        communityName: "寺子屋",
+        qq: "829546109",
+        // 红角洲校区 - OpenStreetMap坐标
+        coords: [28.6698, 115.8129]
+      },
+      {
+        name: "南昌航空大学",
+        communityName: "南昌航空大学东方project同好会",
+        qq: "392377871",
+        // 前湖校区 - OpenStreetMap坐标
+        coords: [28.6511, 115.8201]
+      },
+      {
+        name: "华东交通大学",
+        communityName: "东方花椒园",
+        qq: "1031987369",
+        // OpenStreetMap坐标
+        coords: [28.7427, 115.8657]
+      },
     ],
     photos: [
       "assets/community/placeholder.jpg",
@@ -71,11 +103,11 @@ const cityCommunities = {
     name: "九江市",
     nativeCommunity: {
       name: "九江东方Project同好会",
-      description: "-"
+      description: "赣北最大的同性交友群(雾），第一届九江thp将在2024年的一月28日举行，希望大家支持哦。(thp游客群526842207）"
     },
     socials: {
       qqGroups: [
-        { name: "-", number: "-" }
+        { name: "九江东方project同好会", number: "346566424" }
       ],
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
@@ -89,24 +121,17 @@ const cityCommunities = {
   jingdezhen: {
     name: "景德镇市",
     nativeCommunity: {
-      name: "-",
-      description: "-"
+      name: "赣东北-东方project同好会",
+      description: "江西省-上饶市周边各地区阿卡林省里的阿卡林地区,多山交通便利地区，欢迎浙西和南平等各个地区的小伙伴们来玩。注：人偶拿的是本地区特产 【油条包麻子馃】"
     },
     socials: {
       qqGroups: [
-        { name: "-", number: "-" }
+        { name: "赣东北-东方project同好会", number: "1031987369" }
       ],
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
     },
-    universities: [
-      {
-        name: "景德镇陶瓷大学",
-        communityName: "-",
-        qq: "-",
-        location: null
-      }
-    ],
+    universities: null,
     photos: [
       "assets/community/placeholder.jpg"
     ],
@@ -140,11 +165,11 @@ const cityCommunities = {
     name: "新余市",
     nativeCommunity: {
       name: "新余东方Project同好会",
-      description: "-"
+      description: "河童江西钢铁工业基地（指新钢）（阿卡林省的阿卡林市）"
     },
     socials: {
       qqGroups: [
-        { name: "-", number: "-" }
+        { name: "新余东方Project同好会", number: "554860987" }
       ],
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
@@ -158,17 +183,22 @@ const cityCommunities = {
   yingtan: {
     name: "鹰潭市",
     nativeCommunity: {
-      name: "鹰潭东方Project同好会",
+      name: "赣东北-东方project同好会",
       description: "-"
     },
     socials: {
       qqGroups: [
-        { name: "-", number: "-" }
+        { name: "赣东北-东方project同好会", number: "1031987369" }
       ],
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
     },
-    universities: null,
+    universities: {
+      name: "鹰潭一中",
+      communityName: "博丽神社鹰潭一中第⑨分社",
+      qq: "741324286",
+      location: null
+    },
     photos: [
       "assets/community/placeholder.jpg"
     ],
@@ -178,12 +208,11 @@ const cityCommunities = {
     name: "赣州市",
     nativeCommunity: {
       name: "赣州东方Project同好会",
-      description: "-"
+      description: "赣州车车人闲聊群 江西则佬吹水则赛特区（确信江西飞机佬吹水聚集地（雾（茶会什么的有在准备第二届了（）"
     },
     socials: {
       qqGroups: [
-        { name: "赣州东方同好会群一", number: "-" },
-        { name: "赣州东方同好会群二", number: "-" }
+        { name: "赣州车万人交流聚集地", number: "543308591" },
       ],
       xiaohongshu: {
         exists: true,
@@ -195,10 +224,10 @@ const cityCommunities = {
     universities: [
       {
         name: "赣南师范大学",
-        communityName: "-",
-        qq: "-",
+        communityName: "明湖寺子屋",
+        qq: "788727436",
         location: null
-      }
+      },
     ],
     photos: [
       "assets/community/placeholder.jpg",
@@ -235,12 +264,12 @@ const cityCommunities = {
   shangrao: {
     name: "上饶市",
     nativeCommunity: {
-      name: "上饶东方Project同好会",
+      name: "赣东北-东方project同好会",
       description: "-"
     },
     socials: {
       qqGroups: [
-        { name: "-", number: "-" }
+        { name: "赣东北-东方project同好会", number: "1031987369" }
       ],
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
@@ -261,21 +290,27 @@ const cityCommunities = {
   jian: {
     name: "吉安市",
     nativeCommunity: {
-      name: "吉安东方Project同好会",
-      description: "-"
+      name: "湘赣东方project同好会",
+      description: "命令昨颂，十万工农下吉安。（欢迎湘赣革命老区的同志来群建设根据地☭）"
     },
     socials: {
       qqGroups: [
-        { name: "-", number: "-" }
+        { name: "湘赣东方project同好会", number: "240523252" }
       ],
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
     },
     universities: [
       {
-        name: "-",
-        communityName: "-",
-        qq: "-",
+        name: "井冈山大学",
+        communityName: "井大幻想交流⑨吧",
+        qq: "849429686",
+        location: null
+      },
+      {
+        name: "吉安一中",
+        communityName: "吉安一中秘封俱乐部",
+        qq: "1065478682",
         location: null
       }
     ],
@@ -287,12 +322,12 @@ const cityCommunities = {
   fuzhou: {
     name: "抚州市",
     nativeCommunity: {
-      name: "-",
+      name: "赣东北-东方project同好会",
       description: "-"
     },
     socials: {
       qqGroups: [
-        { name: "-", number: "-" }
+        { name: "赣东北-东方project同好会", number: "1031987369" }
       ],
       xiaohongshu: { exists: false },
       bilibili: { exists: false }
@@ -632,41 +667,94 @@ function closeNanchangMiniMap() {
   document.body.style.overflow = "";
 }
 
+// ==================== OpenStreetMap 地图 ====================
+let nanchangMap = null;
+
 /**
- * 渲染南昌高校小地图
+ * 渲染南昌高校小地图 (使用 OpenStreetMap + Leaflet)
  */
 function renderNanchangMiniMap() {
   const universities = cityCommunities.nanchang.universities;
   const miniMapInfo = document.getElementById("nanchang-mini-info");
+  const mapContainer = document.getElementById("nanchang-osm-map");
 
   // 默认显示提示
   miniMapInfo.innerHTML = `
     <p class="nanchang-mini-map__hint">点击地图上的高校标记查看社群信息</p>
   `;
 
-  // 为小地图上的标记绑定事件
-  const markers = document.querySelectorAll(".nanchang-mini-map__marker");
-  markers.forEach((marker, index) => {
-    marker.addEventListener("click", () => {
-      // 移除其他高亮
-      markers.forEach(m => m.classList.remove("nanchang-mini-map__marker--active"));
-      marker.classList.add("nanchang-mini-map__marker--active");
+  // 如果地图已存在，先销毁
+  if (nanchangMap) {
+    nanchangMap.remove();
+    nanchangMap = null;
+  }
 
-      // 显示高校信息
-      const uni = universities[index];
-      if (uni) {
-        miniMapInfo.innerHTML = `
-          <div class="nanchang-mini-map__uni-info">
-            <h4>${uni.name}</h4>
-            <p>${uni.communityName}</p>
-            <button class="nanchang-mini-map__copy" onclick="copyToClipboard('${uni.qq}')">
-              QQ群: ${uni.qq} (点击复制)
-            </button>
-          </div>
-        `;
-      }
+  // 南昌市中心坐标
+  const nanchangCenter = [28.68, 115.86];
+
+  // 初始化 Leaflet 地图
+  nanchangMap = L.map(mapContainer, {
+    center: nanchangCenter,
+    zoom: 11,
+    scrollWheelZoom: true,
+    attributionControl: true
+  });
+
+  // 添加 OpenStreetMap 瓦片图层
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(nanchangMap);
+
+  // 自定义标记图标
+  const uniIcon = L.divIcon({
+    className: 'uni-marker-icon',
+    html: '<div class="uni-marker-pin"></div>',
+    iconSize: [24, 24],
+    iconAnchor: [12, 24],
+    popupAnchor: [0, -24]
+  });
+
+  // 为每个高校添加标记
+  universities.forEach((uni, index) => {
+    if (!uni.coords) return;
+
+    const marker = L.marker(uni.coords, { icon: uniIcon })
+      .addTo(nanchangMap);
+
+    // 创建弹窗内容
+    const popupContent = `
+      <div class="uni-popup">
+        <div class="uni-popup__name">${uni.name}</div>
+        <div class="uni-popup__community">${uni.communityName}</div>
+        <button class="uni-popup__btn" onclick="copyToClipboard('${uni.qq}')">
+          QQ群: ${uni.qq}
+        </button>
+      </div>
+    `;
+
+    marker.bindPopup(popupContent);
+
+    // 点击标记时更新侧边信息面板
+    marker.on('click', () => {
+      miniMapInfo.innerHTML = `
+        <div class="nanchang-mini-map__uni-info">
+          <h4>${uni.name}</h4>
+          <p>${uni.communityName}</p>
+          <button class="nanchang-mini-map__copy" onclick="copyToClipboard('${uni.qq}')">
+            QQ群: ${uni.qq} (点击复制)
+          </button>
+        </div>
+      `;
     });
   });
+
+  // 延迟调整地图大小（确保模态框完全显示后）
+  setTimeout(() => {
+    if (nanchangMap) {
+      nanchangMap.invalidateSize();
+    }
+  }, 100);
 }
 
 // ==================== 事件监听 ====================

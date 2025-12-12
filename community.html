@@ -7,6 +7,9 @@
   <link rel="shortcut icon" href="assets/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/community.css">
+  <!-- Leaflet.js for OpenStreetMap -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body>
 
@@ -175,29 +178,8 @@
       <div class="nanchang-modal__map">
         <h3 class="nanchang-modal__title">南昌市高校社群分布</h3>
         <div class="nanchang-mini-map">
-          <!-- 南昌市简化小地图 -->
-          <svg class="nanchang-mini-map__svg" viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg">
-            <!-- 南昌市轮廓 -->
-            <path class="nanchang-mini-map__outline" d="
-              M 50 50 L 150 30 L 250 50 L 270 120
-              L 250 180 L 200 220 L 100 220 L 50 180
-              L 30 120 Z
-            " />
-
-            <!-- 高校标记点 -->
-            <circle class="nanchang-mini-map__marker" cx="150" cy="80" r="8" />
-            <circle class="nanchang-mini-map__marker" cx="100" cy="120" r="8" />
-            <circle class="nanchang-mini-map__marker" cx="200" cy="100" r="8" />
-            <circle class="nanchang-mini-map__marker" cx="80" cy="160" r="8" />
-            <circle class="nanchang-mini-map__marker" cx="180" cy="150" r="8" />
-
-            <!-- 高校名称 -->
-            <text class="nanchang-mini-map__label" x="150" y="70">南昌大学</text>
-            <text class="nanchang-mini-map__label" x="100" y="138">江西师大</text>
-            <text class="nanchang-mini-map__label" x="200" y="118">江西财大</text>
-            <text class="nanchang-mini-map__label" x="80" y="178">华东交大</text>
-            <text class="nanchang-mini-map__label" x="180" y="168">江西农大</text>
-          </svg>
+          <!-- OpenStreetMap 地图容器 -->
+          <div id="nanchang-osm-map" class="nanchang-osm-map"></div>
         </div>
       </div>
 
