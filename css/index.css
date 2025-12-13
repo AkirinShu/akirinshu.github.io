@@ -353,9 +353,13 @@
     .col-half {
       grid-column: span 12;
     }
-  
+
     /* 手机Banner高度略缩 */
-    .card.focus { height: 200px; }
+    .card.focus { height: 250px; }
+
+    .card h1 {
+      font-size: 30px;
+    }
   
     /* ==== 手机底部导航栏（类似APP Tab Bar） ==== */
     .mobile-nav {

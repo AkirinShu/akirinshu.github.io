@@ -334,8 +334,8 @@ footer {
     grid-column: span 12;
   }
 
-  /* 手机Banner高度略缩 */
-  .card.focus { height: 200px; }
+  /* 手机Banner高度略缩 
+  .card.focus { height: 200px; }*/
 
   /* ==== 手机底部导航栏（类似APP Tab Bar） ==== */
   .mobile-nav {
