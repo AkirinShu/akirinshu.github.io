@@ -1,1 +1,1 @@
-江西THO/江西东方Project同好会的官方网站
+本仓库已不再作为jxth.club江西THO官网仓库
